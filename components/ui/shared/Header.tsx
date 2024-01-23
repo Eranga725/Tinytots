@@ -1,9 +1,9 @@
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
 import Image from "next/image"
-import Link from "next/link"
-import { Button } from "../button" 
+import Link from "next/link" 
 import NavItems from "./NavItems"
 import MobileNav from "./MobileNav"
+import { Button } from "../button"
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         <Link href="/" className="w-36">
         <Image
           src="/assets/images/logo.svg" width={128} height={38}
-          alt="Evently logo" 
+          alt="Tiny tots" 
         />
         </Link>
 
