@@ -1,8 +1,19 @@
-import React from 'react'
+import { headerLinks } from "@/constant";
+import Link from "next/link";
+import React from "react";
 
-const NavItems = () => {
-  return (
-    <div>NavItems</div>
+const NavItems =() => {
+  return(
+    <ul className="md:flex-between flex">
+      {headerLinks.map((link)=>{
+
+        return(
+          <li>
+          <Link href={link.route}>{link.label}</Link>
+          </li>
+        )
+      })}
+    </ul>
   )
 }
 
