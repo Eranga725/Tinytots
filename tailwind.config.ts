@@ -9,6 +9,7 @@ module.exports = withUt({
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
+
   theme: {
     container: {
       center: true,
@@ -17,6 +18,7 @@ module.exports = withUt({
         '2xl': '1400px',
       },
     },
+
     extend: {
       colors: {
         primary: {
