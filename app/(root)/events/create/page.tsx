@@ -5,11 +5,10 @@ const createEvent = () => {
   
   const { sessionClaims } = auth();
 
-  const userID =sessionClaims?.userID as string;
+  const userID =sessionClaims?.userId as string;
   return (
     <>
-    <section className="bg-primary-50 bg-dotted-pattern bg-cover
-    bg-center py-5 md:py-10">
+    <section className=" bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
       <h3 className="wrapper h3-bold text-center sm:text-left">Create content</h3>
     </section>
 
