@@ -5,7 +5,7 @@ const UpdateEvent = () => {
   
   const { sessionClaims } = auth();
 
-  const userID =sessionClaims?.userID as string;
+  const userId =sessionClaims?.userId as string;
   return (
     <>
     <section className="bg-primary-50 bg-dotted-pattern bg-cover
@@ -14,7 +14,7 @@ const UpdateEvent = () => {
     </section>
 
     <div className="wrapper my-8">
-      <EventForm userId={userID} type="Update"/>
+      <EventForm userId={userId} type="Update"/>
     </div>
     </>
   )
